@@ -12,7 +12,7 @@ export default function useFetch(query){
         try {
             setData(prev=>({...prev, isLoading: true}));
             const {username} = !query ? await getUsername(): '';
-            const {data,status} = !query? await axios.get(`/api/user/${username}`) : await axios.get(`/api/${query}`);
+            const {data,status} = !query? await axios.get(`https://mern-health-app-backend.onrender.com/api/user/${username}`) : await axios.get(`https://mern-health-app-backend.onrender.com/api/${query}`);
             console.log(data);
 
             if(status === 201){
