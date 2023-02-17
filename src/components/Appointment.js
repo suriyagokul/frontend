@@ -42,7 +42,7 @@ function AppointmentPage() {
   function handleAppointment(event){
     event.preventDefault();
 
-  axios.post('/api/appointment', {
+  axios.post('https://mern-health-app-backend.onrender.com/api/appointment', {
     date: date,
     time: time.value,
     purpose:service
