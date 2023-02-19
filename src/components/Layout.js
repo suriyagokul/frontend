@@ -35,12 +35,9 @@ function Layout({ children }) {
             className="justify-content-end p-2"
             id="basic-navbar-nav">
             <Nav className="ml-auto" >
-//               <Link to="/services">Services</Link>
-//               <Link to="/about">About</Link>
-//               <Link to="/testimonials">Testimonials</Link>
-                  <li><a href="/services" class="text-blue-500 hover:text-blue-800 font-bold py-2 px-4 border border-blue-500 rounded">Services</a></li>
-                  <li><a href="/about">About</a></li>
-                  <li><a href="/testimonials">Testimonials</a></li>
+                  <li><a href="/services" class="text-blue-500 hover:text-blue-800 font-bold py-2 px-4 border border-blue-500 rounded text-decoration-line: none">Services</a></li>
+                  <li><a href="/about" class="text-blue-500 hover:text-blue-800 font-bold py-2 px-4 border border-blue-500 rounded text-decoration-line: none">About</a></li>
+                  <li><a href="/testimonials" class="text-blue-500 hover:text-blue-800 font-bold py-2 px-4 border border-blue-500 rounded text-decoration-line: none">Testimonials</a></li>
 
             </Nav>
             <Link to="/" onClick={userLogout} style={{ textDecoration: 'none'}} className="text-red-500">Logout</Link>
