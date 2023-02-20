@@ -31,10 +31,11 @@ export async function getUser({username}){
 
 /** register function */
 export async function registerUser(credentials){
+    console.log(credentials)
     try {
         const {data:{msg}, status} = await axios.post(`https://mern-health-app-backend.onrender.com/api/register`, credentials);
         let {username, email} = credentials;
-         console.log(credentials)
+         
         
 
         /** send mail */
