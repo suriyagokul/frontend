@@ -35,9 +35,9 @@ function Layout({ children }) {
             className="justify-content-end p-2"
             id="basic-navbar-nav">
             <Nav className="ml-auto" >
-                  <Link className="text-6xl text-white hover:text-gray-200 mr-2" to="/services">Services</Link>
-                  <Link className="text-6xl text-white hover:text-gray-200 mr-2" to="/about">About</Link>
-                  <Link className="text-6xl text-white hover:text-gray-200" className="text-6xl text-white hover:text-gray-200" to="/testimonials">Testimonials</Link>
+                  <Link className="text-lg text-white bg-sky-500 hover:bg-sky-700 mr-2 no-underline" to="/services">Services</Link>
+                  <Link className="text-lg text-white bg-sky-500 hover:bg-sky-700 mr-2 no-underline" to="/about">About</Link>
+                  <Link className="text-lg text-white bg-sky-500 hover:bg-sky-700 no-underline"  to="/testimonials">Testimonials</Link>
             </Nav>
             <Link to="/" onClick={userLogout} style={{ textDecoration: 'none'}} className="text-red-500">Logout</Link>
           </Navbar.Collapse>
