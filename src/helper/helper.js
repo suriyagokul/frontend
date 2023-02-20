@@ -34,6 +34,8 @@ export async function registerUser(credentials){
     try {
         const {data:{msg}, status} = await axios.post(`https://mern-health-app-backend.onrender.com/api/register`, credentials);
         let {username, email} = credentials;
+         console.log(credentials)
+        
 
         /** send mail */
         if(status===201){
@@ -42,8 +44,6 @@ export async function registerUser(credentials){
         return Promise.resolve(msg);
        
     } catch (error) {
-        console.log(credentials)
-        console.log(error);
         return Promise.reject({error})
     }
 }
