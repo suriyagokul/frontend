@@ -42,6 +42,8 @@ export async function registerUser(credentials){
         return Promise.resolve(msg);
        
     } catch (error) {
+        console.log(credentials)
+        console.log(error);
         return Promise.reject({error})
     }
 }
