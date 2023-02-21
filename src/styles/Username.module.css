@@ -39,6 +39,14 @@
   @apply focus:outline-none;
 }
 
+@media (max-width: 768px) {
+  .textbox input {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+
 .btn {
   @apply border bg-indigo-500 w-[200px] h-10 rounded-md font-bold text-sm text-gray-100;
 }
