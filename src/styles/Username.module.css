@@ -7,6 +7,13 @@
   @apply border-4 border-gray-50 shrink-0 w-[30%] h-[90%] rounded-3xl py-8 px-16 min-w-max;
 }
 
+@media screen and (max-device-width: 480px){
+  .glass {
+     @apply w-[90%] h-[50%] p-4;
+     backdrop-filter: blur(3.55px);
+  }
+}
+
 .profile {
   @apply border-4 border-gray-100  w-[135px] h-[130px]  rounded-full shadow-sm cursor-pointer;
   @apply hover:border-gray-200;
