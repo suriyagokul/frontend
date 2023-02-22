@@ -12,6 +12,9 @@
      @apply w-[90%] h-[50%] p-4;
      backdrop-filter: blur(3.55px);
   }
+  .btn{
+    @apply mt-2
+  }
 }
 
 .profile {
