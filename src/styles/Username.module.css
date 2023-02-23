@@ -4,6 +4,7 @@
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(7.1px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 2rem;
   @apply border-4 border-gray-50 shrink-0 w-[30%] h-[90%] rounded-3xl py-8 px-16 min-w-max;
 }
 
