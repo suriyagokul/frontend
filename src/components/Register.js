@@ -31,7 +31,7 @@ export default function Register() {
         loading: 'Creating...',
         success : <b>Registered Successfully...!</b>,
         //error : [(error) => <b>{error}</b>]
-        error : [(error) => <b>Could not Register. {error}</b>]
+        error : <b>Could not Register. </b>
       });
     registerPromise.then(function(){navigate('/')})
     },
