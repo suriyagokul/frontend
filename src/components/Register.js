@@ -29,8 +29,8 @@ export default function Register() {
       let registerPromise = registerUser(values)
       toast.promise(registerPromise, {
         loading: 'Creating...',
-        success : [<b>Registered Successfully...!</b>],
-        error : [(error) => <b>{error}</b>]
+        success : <b>Registered Successfully...!</b>,
+        error : (error) => <b>{error}</b>
         //error : <b>Could not Register.</b>
       });
     registerPromise.then(function(){navigate('/')})
