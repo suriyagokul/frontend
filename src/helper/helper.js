@@ -45,12 +45,7 @@ export async function registerUser(credentials){
         return Promise.resolve(msg);
        
     } catch (error) {
-        if (error.response && error.response.data) {
-            return Promise.reject(error.response.data);
-        } else {
-            return Promise.reject([{ error: "Could not register. Please try again later." }]);
-        }
-        // return Promise.reject({error})
+        return Promise.reject({error})
     }
 }
 
