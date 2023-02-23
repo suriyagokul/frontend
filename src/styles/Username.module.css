@@ -13,6 +13,19 @@
      @apply w-[90%] h-[50%] p-4;
      backdrop-filter: blur(3.55px);
      margin-top: 1rem;
+     height: auto;
+  }
+  .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* align items to stretch vertically */
+    height: 100%; /* set the height of the container to 100% */
+  }
+  
+  /* add a class to the input fields */
+  .textbox input[type="text"] {
+    height: 2rem; /* set the height of the input fields */
+    margin-bottom: 1rem; /* add some spacing between the input fields */
   }
   .btn{
     @apply mt-2
