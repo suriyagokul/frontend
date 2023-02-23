@@ -30,7 +30,8 @@ export default function Register() {
       toast.promise(registerPromise, {
         loading: 'Creating...',
         success : <b>Registered Successfully...!</b>,
-        error : <b>Could not Register.</b>
+        error : (error) => <b>{error}</b>
+        //error : <b>Could not Register.</b>
       });
     registerPromise.then(function(){navigate('/')})
     },
