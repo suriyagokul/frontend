@@ -8,7 +8,7 @@ export async function userNameValidate(values) {
   if(values.username){
     const {status} = await authenticate(values.username);
     if(status!=200){
-     errors.exist =  toast.error("User doesn't exist!");
+     errors.exist =  toast.error(`User doesn't exist! ${status}, ${values.username}`);
     }
   }
   return errors;
