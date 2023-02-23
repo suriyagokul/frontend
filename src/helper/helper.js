@@ -33,7 +33,7 @@ export async function getUser({username}){
 export async function registerUser(credentials){
     console.log(credentials)
     try {
-        const {data:{msg}, status} = await axios.post(`https://mern-health-app-backend.onrender.com/api/register`, credentials);
+        const {data, status} = await axios.post(`https://mern-health-app-backend.onrender.com/api/register`, credentials);
         let {username, email} = credentials;
          
         
@@ -42,7 +42,7 @@ export async function registerUser(credentials){
         if(status===201){
             await axios.post("https://mern-health-app-backend.onrender.com/api/registerMail", {username, userEmail: email, text:msg});
         }
-        return Promise.resolve(data,msg);
+        return Promise.resolve(data);
         
        
     } catch (error) {
