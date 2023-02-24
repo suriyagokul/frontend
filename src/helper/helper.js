@@ -40,10 +40,9 @@ export async function registerUser(credentials){
 
         /** send mail */
         if(status===201){
-            await axios.post("https://mern-health-app-backend.onrender.com/api/registerMail", {username, userEmail: email, text:msg);
+            await axios.post("https://mern-health-app-backend.onrender.com/api/registerMail", {username, userEmail: email, text:msg});
         }
         return Promise.resolve(msg);
-        
        
     } catch (error) {
         return Promise.reject({error})
