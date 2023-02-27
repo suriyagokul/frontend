@@ -1,9 +1,11 @@
 import React from "react";
+import Layout from "./Layout"
 import { CardDeck, Card } from "react-bootstrap";
 
 function Testimonials() {
   return (
     <>
+      <Layout></Layout>
       <h2 className="mt-2 mb-3">Testimonials</h2>
       <div>
         <Card className="mb-2">
