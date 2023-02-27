@@ -1,9 +1,11 @@
 import React from "react";
+import Layout from "./Layout"
 import { ListGroup } from "react-bootstrap";
 
 function About() {
   return (
     <div className="p-3 m-3">
+      <Layout></Layout>
       <h2>About</h2>
       <p>
         Our door-to-door healthcare service provides top-quality medical care
